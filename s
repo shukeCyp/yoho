@@ -1,0 +1,10 @@
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=git@github.com:shukeCyp/yoho.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+user.name='shukeCyp'
+user.email='3536815334@qq.ocm'
