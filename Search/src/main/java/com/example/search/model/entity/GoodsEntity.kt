@@ -1,0 +1,57 @@
+package com.example.search.model.entity
+
+/**
+ *   @Author:YaPeng
+ *   @Date:2021/7/30
+ *   @Email:3536815334@qq.com
+ */
+data class GoodsEntity(
+    val CategoryId: Int,
+    val CategoryName: String,
+    val CommissionRate: String,
+    val CommissionType: String,
+    val CouponId: String,
+    val CouponInfo: String,
+    val CouponRemainCount: Int,
+    val CouponTotalCount: Int,
+    val IncludeDxjh: String,
+    val IncludeMkt: String,
+    val InfoDxjh: String,
+    val ItemDescription: String,
+    val ItemId: Long,
+    val ItemUrl: String,
+    val JddNum: Int,
+    val LevelOneCategoryId: Int,
+    val LevelOneCategoryName: String,
+    val LockRateEndTime: Int,
+    val LockRateStartTime: Int,
+    val Nick: String,
+    val NumIid: Long,
+    val PictUrl: String,
+    val PresaleDeposit: String,
+    val PresaleEndTime: Int,
+    val PresaleStartTime: Int,
+    val PresaleTailEndTime: Int,
+    val PresaleTailStartTime: Int,
+    val Provcity: String,
+    val RealPostFee: String,
+    val ReservePrice: String,
+    val SellNum: Int,
+    val SellerId: Long,
+    val ShopDsr: Int,
+    val ShopTitle: String,
+    val ShortTitle: String,
+    val SmallImages: List<String>,
+    val Stock: Int,
+    val Title: String,
+    val TkTotalCommi: String,
+    val TkTotalSales: String,
+    val TotalStock: Int,
+    val Url: String,
+    val UserType: Int,
+    val UvSumPreSale: Int,
+    val Volume: Int,
+    val WhiteImage: String,
+    val XId: String,
+    val ZkFinalPrice: String
+)

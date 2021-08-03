@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/register_edit_username"
+        android:hint="请输入用户名"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/login_username_and_password_edittext"
+        android:layout_width="300dp"
+        android:layout_height="40dp"/>
+    <EditText
+        android:id="@+id/register_edit_password"
+        android:inputType="textPassword"
+        android:hint="请输入密码"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/login_username_and_password_edittext"
+        android:layout_width="300dp"
+        android:layout_height="40dp"/>
+    <EditText
+        android:id="@+id/register_edit_againpassword"
+        android:inputType="textPassword"
+        android:hint="请再次输入密码"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/login_username_and_password_edittext"
+        android:layout_width="300dp"
+        android:layout_height="40dp"/>
+
+    <CheckBox
+        android:id="@+id/register_checkbox_isagree"
+        android:layout_marginTop="310dp"
+        android:layout_marginLeft="70dp"
+        android:textSize="20sp"
+        android:text="已同意遵守志强是沙雕协议"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/register_button_register"
+        android:textSize="20sp"
+        android:text="注册"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/login_loginbtn_background"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

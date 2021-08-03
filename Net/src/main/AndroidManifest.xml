@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.net">
+    <application>
+        <meta-data android:name="authorization" android:value="0a1db1f41dd1dc1b71b013c1da1551301651ec1ec1601101"/>
+    </application>
+</manifest>
