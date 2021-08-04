@@ -2,7 +2,16 @@ package com.example.yoho
 
 
 
+import android.Manifest
+import android.content.Context
+import android.content.pm.PackageManager
+import android.location.Location
+import android.location.LocationManager
+import android.util.Log
 import android.view.MenuItem
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.viewpager.widget.ViewPager
@@ -68,6 +77,39 @@ class MainActivity : BaseActivity() {
         })
     }
     override fun initData() {
+//        val permission1 =
+//            ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+//        val permission2 =
+//            ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+//
+//        if (permission1!=PackageManager.PERMISSION_GRANTED && permission2!=PackageManager.PERMISSION_GRANTED){
+//            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.ACCESS_FINE_LOCATION),1);
+//
+//        }
+
+//        val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
+//        val time = if (ActivityCompat.checkSelfPermission(this,
+//                Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+//                this,
+//                Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+//        ) {
+//            locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER)?.time
+//
+//        } else {
+//            Toast.makeText(this, "没有权限", Toast.LENGTH_SHORT).show()
+//            var list: MutableList<String> = mutableListOf(Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.ACCESS_FINE_LOCATION)
+//
+//            ActivityCompat.requestPermissions(this, list.toTypedArray(),1);
+//            return
+//        }
+//
+//        if (time != null){
+//            Log.i("TAG", "time: ${time}")
+//        }
+//        else{
+//            Log.i("TAG", "time is null")
+//        }
+
         //准备数据源
         var fragments:MutableList<Fragment> = mutableListOf(
             HomePageFragment(),
@@ -81,5 +123,7 @@ class MainActivity : BaseActivity() {
             fragments
         )
     }
+
+
 
 }

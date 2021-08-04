@@ -1,12 +1,13 @@
 package com.example.yoho
 
-import androidx.test.platform.app.InstrumentationRegistry
+import android.content.Context
+import android.content.Context.LOCATION_SERVICE
+import android.location.LocationManager
 import androidx.test.ext.junit.runners.AndroidJUnit4
-
+import androidx.test.platform.app.InstrumentationRegistry
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
-
-import org.junit.Assert.*
 
 /**
  * Instrumented test, which will execute on an Android device.
@@ -20,5 +21,7 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals("com.example.yoho", appContext.packageName)
+
+
     }
 }

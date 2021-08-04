@@ -174,4 +174,42 @@
                     android:layout_width="64dp"
                     android:layout_height="14dp"/>
         </RelativeLayout>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="402dp"
+            android:textSize="18sp"
+            android:text="发现好货"
+            android:layout_width="80dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="435dp"
+            android:text="品质新生活"
+            android:textColor="#009688"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginBottom="195dp"
+            android:src="@drawable/guangtou" />
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="320dp"
+            android:layout_marginBottom="195dp"
+            android:src="@drawable/guangtou" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homepage_recycler_goods"
+            android:layout_marginTop="550dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </RelativeLayout>
