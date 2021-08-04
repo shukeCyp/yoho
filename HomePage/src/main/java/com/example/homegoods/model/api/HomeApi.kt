@@ -12,6 +12,6 @@ import retrofit2.http.GET
  */
 interface HomeApi {
 
-    @GET("api/Goods/getRecommendGoods?page=1&pagesize=20")
+    @GET("api/Goods/getRecommendGoods?page=1&pagesize=50")
     fun getGoodslist():Observable<BaseGoodsEntity<GoodsEntity>>
 }
