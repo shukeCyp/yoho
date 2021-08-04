@@ -29,6 +29,6 @@ interface HomeContract {
     }
 
     abstract class HomePresenter(_view : HomeView) : BasePresenter<HomeRepository,HomeView>(_view){
-        abstract fun getGoodsList(observer: Observer<BaseGoodsEntity<GoodsEntity>>)
+        abstract fun getGoodsList()
     }
 }
