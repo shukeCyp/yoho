@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import com.alibaba.android.arouter.launcher.ARouter
 import com.example.homegoods.adapter.HomeGoodsAdapter
 import com.example.homegoods.contract.HomeContract
 import com.example.homegoods.model.entity.GoodsEntity
@@ -65,7 +66,9 @@ class HomePageFragment : BaseMvpFragment<HomePresenterImpl>(), HomeContract.Home
         /**
          * 点击搜索框跳转搜索模块
          */
-        fragment_homepage_search_textview.setOnClickListener {  }
+        fragment_homepage_search_textview.setOnClickListener {
+            ARouter.getInstance().build("/Search/SearchActivity").navigation()
+        }
     }
 
 
